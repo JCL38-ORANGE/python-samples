@@ -4,7 +4,7 @@ def on_file():
     urls = set()
     hurls = {}
     try:
-        with open("data/post.log", "r", encoding="utf-8") as f:
+        with open("data/post.dat", "r", encoding="utf-8") as f:
             for line in f:
                 if line.startswith('POST '):
                     verb, url, version = line.split()
